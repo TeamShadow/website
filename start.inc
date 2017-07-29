@@ -17,4 +17,5 @@
 		<link href="<?=$path?>nonie.css" rel="stylesheet" type="text/css" />
 	<![endif]>	
 	
-	<script type="text/javascript" src="<?=$path?>prettify/prettify.js?lang=shadow"></script>	
+	<script type="text/javascript" src="<?=$path?>prettify/prettify.js?lang=shadow"></script>
+	
