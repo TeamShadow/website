@@ -1,10 +1,10 @@
 html { height: 100%; width: 100%; margin: 0; padding: 0; }
-body { width: 100%; height: 100%; margin: 0; padding: 0; min-width: 60em; font-family: Verdana, Helvetica, Arial, sans-serif; background-image:url('images/background.png'); background-repeat:repeat-x; background-position:left top; background-color: white; }
+body { width: 100%; height: 100%; margin: 0; padding: 0; min-width: 60em; font-family: Verdana, Helvetica, Arial, sans-serif; background-color: rgb(204, 204, 204); }
 
 div.spacer { padding: 1em; margin: 0; }
 #container { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -6em; background-image:url('images/side.png'); background-repeat:repeat-y; background-position:left top;  }
-#header { width: 100%; min-width: 60em; height: 10em; color: black; padding: 0; margin: 0; position: absolute; top: 0; left: 0; background-image:url('images/background.png'); background-repeat:repeat-x; background-position:left top; background-color: white; }
-#menu { width: 100%; min-width: 60em; height: 3em; color: white; background-color: black; padding: 0; margin: 0; position: absolute; top: 10em; left: 0; vertical-align: middle; border-top: solid thin white; border-bottom: solid thin white;  }
+#header { width: 100%; min-width: 60em; height: 10em; color: black; padding: 0; margin: 0; position: absolute; top: 0; left: 0; background-color: rgb(2, 80, 57); }
+#menu { width: 100%; min-width: 60em; height: 3em; color: white; background-color: black; padding: 0; margin: 0; position: absolute; top: 10em; left: 0; vertical-align: middle; border-top: solid thin rgb(233,255,128); border-bottom: solid thin rgb(233,255,128);  }
 div.menu-item { margin: 0; float: left; width: 20%; height: 100%; line-height: 100%; text-align: center; position: relative; }
 #content { width: 100%; color: black; padding: 0; margin: 0;  }
 #content > div.spacer { padding-top: 15em; padding-bottom: 1em; padding-left: 1em; padding-left: 300px; margin: 0; }
@@ -14,12 +14,12 @@ div.menu-item { margin: 0; float: left; width: 20%; height: 100%; line-height: 1
 #footer div.spacer { border-top: solid thin white;}
 #push { height: 6em; }
 
-div.download { width: 20em; background-image: url('images/download-background.png'); background-repeat: repeat-x; background-color: white; border: solid thin black;margin-left: auto; margin-right: auto; text-align: center; font-size: 1.5em; } 
+div.download { width: 20em; background-color: rgb(2, 80, 57); border: solid thin black;margin-left: auto; margin-right: auto; text-align: center; font-size: 1.5em; } 
 
 code { font-size: 1.3em; font-weight: bold; }
 tt { font-size: 1.3em; font-weight: bold; }
 
-strong.tag { border: solid thin black; background-color: rgb(155, 220, 251); color: black; padding: .5em; font-size: .9em; }
+strong.tag { border: solid thin black; background-color: rgb(233,255,128); color: black; padding: .5em; font-size: .9em; }
 div.box { margin-top: .5em; margin-bottom: .5em; padding: .5em; background-color: black; font-size: .9em; }
 div.note { position: absolute; width: 240px; left: 0; padding-left: 20px; padding-right: 20px; color: white; }
 

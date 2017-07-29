@@ -108,12 +108,12 @@ var prettyPrint;
       "instanceof,interface,null,native,package,strictfp,super,synchronized," +
       "throws,transient"];
   var SHADOW_KEYWORDS = "abstract,and,assert,boolean,break,byte,case,cast," + 
-	  "catch,check,class,code,copy,create,constant,continue,default,destroy," + 
-	  "do,double,else,enum,error,exception,extends,false,finally,float,for," + 
-	  "foreach,freeze,get,if,immutable,implements,import,in,instance,is,int," + 
-	  "interface,locked,long,native,null,nullable,or,private,protected,public," +
-	  "readonly,recover,return,set,short,singleton,skip,super,switch,this,throw," +
-	  "throws,true,try,ubyte,uint,ulong,ushort,var,view,weak,while,xor";
+	  "catch,check,class,code,constant,continue,copy,create,default,destroy," + 
+	  "do,double,else,enum,exception,false,finally,float,for,foreach,freeze," + 
+	  "get,if,immutable,import,in,int,interface,is,locked,long,native,null," +
+	  "nullable,or,private,protected,public,readonly,recover,return,set," + 
+	  "short,singleton,skip,super,switch,this,throw,true,try,ubyte,uint," + 
+	  "ulong,ushort,var,weak,while,xor";
   var CSHARP_KEYWORDS = [JAVA_KEYWORDS,
       "as,base,by,checked,decimal,delegate,descending,dynamic,event," +
       "fixed,foreach,from,group,implicit,in,internal,into,is,let," +
