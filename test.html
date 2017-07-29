@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="shadow.css" rel="stylesheet" type="text/css" /><link href="prettify/prettify.css" rel="stylesheet" type="text/css" />
+<link href="shadow.css" rel="stylesheet" type="text/css" />
+<link href="prettify/prettify.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="images/favicon.ico" />
 	
 	<!--[if lt IE 9]>
@@ -23,7 +24,7 @@
 	Shadow Programming Language
 </title>
 </head>
-<body onload="updateShading(); prettyPrint();">
+<body onload="prettyPrint();">
 <div id="container">
 	
 	<div id="content">
@@ -125,6 +126,13 @@
 					<td><code>0uL</code></td>
 				</tr>				
 			</table>
+			
+			
+			
+<pre class="prettyprint lang-shadow">
+nullable String whoKnows = getStuff();
+String notNull = whoKnows ?? "random junk";
+</pre>
 
 			
 		</div>

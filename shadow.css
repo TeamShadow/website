@@ -29,7 +29,7 @@ table.shaded tr:nth-child(even) {background-color: rgb(192,211,205)}
 table.shaded tr:hover { background-color: rgb(233,255,128); }
 table.shaded td { text-align: center; padding:.5em; }
 
-pre { color: white; display: block; background-color: #333; padding: .75em }
+pre { display: block; padding: .75em }
 
 ul {list-style-type: square; }
 

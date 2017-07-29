@@ -10,7 +10,7 @@
 	Using the Shadow Compiler - Tutorials - Shadow
 </title>
 </head>
-<body onload="updateShading(); prettyPrint();">
+<body onload="prettyPrint();">
 <div id="container">	
 	<div id="content">
 		<div class="spacer">
