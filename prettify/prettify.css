@@ -1,19 +1,19 @@
 /* desert scheme ported from vim to google prettify */
 pre.prettyprint { display: block; background-color: #FFF; padding: .75em}
 pre .nocode { background-color: none; color: #000 }
-pre .str { color: #fa85b9 } /* string  - pink */
+pre .str { color: rgb(0, 128, 0); } /* string  - pink */
 /*pre .kwd { color: #f0e68c; font-weight: bold } */
-pre .kwd { color: rgb(155, 220, 251); font-weight: bold }
-pre .com { color: #98fb98 } /* comment - lightgreen */
+pre .kwd { color: rgb(128, 0, 128); font-weight: bold }
+pre .com { color: rgb(128, 128, 128); } /* comment - lightgreen */
 /*pre .typ { color: #98fb98 }*/ /* type    - lightgreen */
-pre .typ { color: #fff }
-pre .lit { color: #fa85b9 } /* literal - pink */
-pre .pun { color: lightgray }    /* punctuation */
-pre .pln { color: #fff }    /* plaintext */
+pre .typ { color: rgb(0, 0, 128); }
+pre .lit { color: rgb(0, 128, 0); } /* literal - pink */
+pre .pun { color: #000 }    /* punctuation */
+pre .pln { color: #000 }    /* plaintext */
 pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
-pre .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
-pre .atv { color: #fa85b9} /* attribute value - pink */
-pre .dec { color: #fff } /* decimal         - was lightgreen */
+pre .atn { color: #000; font-weight: bold } /* attribute name  - khaki */
+pre .atv { color: #000} /* attribute value - pink */
+pre .dec { color: rgb(0, 128, 0);} /* decimal         - was lightgreen */
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
