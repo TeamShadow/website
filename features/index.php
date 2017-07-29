@@ -101,8 +101,7 @@ i = i++; // different versions of gcc get different results for i!
 <pre class="prettyprint lang-java">
 // Java code
 boolean value = false;
-if( value = true ) // always true, but illegal in Shadow
-{
+if( value = true ) { // always true, but illegal in Shadow
 	...
 }
 </pre>			
@@ -489,13 +488,11 @@ clan["Dennis Coles"] = "Ghostface Killah";
 			
 <pre class="prettyprint lang-shadow">
 nullable Hypothesis unknown = getHypothesis();
-try
-{
+try {
     Hypothesis hypothesis = check(unknown);
     hypothesis.test();
 }
-recover
-{
+recover {
     Console.printLine("It's the null hypothesis!");
 }
 </pre>
