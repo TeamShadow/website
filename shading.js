@@ -7,7 +7,7 @@ function updateShading()
 		for( var j = 1; j < rows.length; j++ )
 		{			
 			if( j % 2 == 1 )
-				rows[j].style.backgroundColor =  "rgb(155,220,251)";
+				rows[j].style.backgroundColor =  "rgb(192,211,205)";
 		}
 	}
 	
@@ -21,7 +21,7 @@ function updateShading()
 			for(var k = 0; k < cells.length; k++ )
 			{			
 				if( k % 2 == 0 )
-					cells[k].style.backgroundColor =  "rgb(155,220,251)";
+					cells[k].style.backgroundColor =  "rgb(192,211,205)";
 			}
 		}
 	}

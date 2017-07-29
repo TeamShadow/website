@@ -23,13 +23,16 @@ strong.tag { border: solid thin black; background-color: rgb(233,255,128); color
 div.box { margin-top: .5em; margin-bottom: .5em; padding: .5em; background-color: black; font-size: .9em; }
 div.note { position: absolute; width: 240px; left: 0; padding-left: 20px; padding-right: 20px; color: white; }
 
-table.shaded { border: solid .15em black; margin-left: auto; margin-right: auto; }
-table.shaded th {	background-color: rgb(0,170,251); text-align: center; padding:.5em; }
+table.shaded { border: solid .15em black; margin-left: auto; margin-right: auto; background-color: white; }
+table.shaded th {	background-color: rgb(2, 80, 57); text-align: center; padding:.5em; color: white; }
 table.shaded td { text-align: center; padding:.5em; }
 
 pre { color: white; display: block; background-color: #333; padding: .75em }
 
 ul {list-style-type: square; }
+
+h1 { color: rgb(2, 80, 57); }
+h3 { color: rgb(2, 80, 57); }
 
 /*
 ul

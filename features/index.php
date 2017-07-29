@@ -399,8 +399,8 @@ immutable Person cantTouchThis = freeze(mcHammer); // can never have its interna
 <pre class="prettyprint lang-shadow">
 immutable class Complex
 is  CanAdd&lt;Complex&gt; 
-and CanSubtract&lt;Complex&gt;,
-and CanMultiply&lt;Complex&gt;,
+and CanSubtract&lt;Complex&gt;
+and CanMultiply&lt;Complex&gt;
 and CanEqual&lt;Complex&gt;
 {
     get int real;
