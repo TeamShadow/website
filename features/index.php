@@ -284,7 +284,7 @@ class Wombat
 			<ol>
 				<li>The addition of only the <code>get</code> and <code>set</code> modifiers adds default properties with no extra work.</li>
 				<li>Properties and their related member variables have the same name.</li>
-				<li>Using the arrow (<code>-></code>) rather than the dot (<code>.</code>) distinguishes a property call (which can potentially execute arbitrarily complex code) from a member access.  </li>
+				<li>Using the arrow (<code>-></code>) distinguishes a property call (which can potentially execute arbitrarily complex code) from a member access.  </li>
 			</ol>
 			
 			<a href="#top"><small>Back to top</small></a><br/>
@@ -295,7 +295,7 @@ class Wombat
 			There is no <code>static</code> keyword in Shadow, but in other languages it is occasionally necessary to use a <code>static</code> member to share a single item among many pieces of code.  Perhaps the best reason to do so is the singleton design pattern, in which there is only ever a single object of a given class. Our solution is singleton classes, of which there can only be a single object at any time, per thread.
 			</p>
 			
-			<p>A singleton object never needs to be created, since its creation is handled in the first method where it appears.A good example of a singleton is the <code>Console</code> class used for command line I/O.  Although not necessary, a singleton variable can be used, which is just a convenient alias for the singleton.
+			<p>A singleton object never needs to be created, since its creation is handled in the first method where it appears. A good example of a singleton is the <code>Console</code> class used for command line I/O.  Although not necessary, a singleton variable can be used, which is just a convenient alias for the singleton.
 			</p>
 			
 <pre class="prettyprint lang-shadow">
@@ -313,7 +313,7 @@ screen.printLine("Shut 'em down!");
 			</p>
 			
 			<p>
-			In Shadow, there is a way.  The <code>immutable</code> keyword allows a class to be marked immutable.  Any code outside of its constructor that seeks to modify its contents will not compile.
+			In Shadow, there <em>is</em> a way.  The <code>immutable</code> keyword allows a class to be marked immutable.  Any code outside of its constructor that seeks to modify its contents will not compile.
 			</p>
 			
 			<p>
@@ -349,7 +349,7 @@ screen.printLine("Shut 'em down!");
 			</p>
 			
 			<p>
-			In Shadow, there are two keywords specifically designed for deep copies: <code>copy</code> and <code>freeze</code>.  When <code>copy</code> is used to copy an object, it performs a full deep copy, making deep copies of all the members as well.  Internally, the <code>copy</code> command keeps track of all the new objects allocated.  If a circular reference would cause something to be copied a second time, the <code>copy</code> command instead uses the first copy.  The exception to the rule are <code>immutable</code> objects, which cannot be changed anyway.  References to such objects are assigned directly, without making copies of the underlying objects.
+			In Shadow, there are two keywords specifically designed for deep copies: <code>copy</code> and <code>freeze</code>.  When <code>copy</code> is used to copy an object, it performs a full deep copy, making deep copies of all the members as well.  Internally, the <code>copy</code> command keeps track of all the new objects allocated.  If a circular reference would cause something to be copied a second time, the <code>copy</code> command instead uses the first copy.  The exception to the rule is <code>immutable</code> objects, which cannot be changed anyway.  References to such objects are assigned directly, without making copies of the underlying objects.
 			</p>
 			
 			<p>
@@ -375,11 +375,11 @@ immutable Person cantTouchThis = freeze(mcHammer); // can never have its interna
 			</p>
 			
 			<p>
-			Ultimately, this design causes confusion, particularly since it is legal to compare two objects with <code>==</code>, even if it is rarely useful.  In Shadow, the <code>==</code> operator is only valid between an object that implements the <code>CanEqual</code> interface for the other object.  In other words, the <code>==</code> operator is syntactic sugar for the <code>equal()</code> method (which does not end with an 's' in Shadow).
+			Ultimately, this design causes confusion, particularly since it is legal to compare two objects with <code>==</code>, even if it's rarely useful.  In Shadow, the <code>==</code> operator is only valid between an object that implements the <code>CanEqual</code> interface for the other object.  In other words, the <code>==</code> operator is syntactic sugar for the <code>equal()</code> method (which does not end with an 's' in Shadow).
 			</p>
 			
 			<p>
-			For primitive types, the <code>==</code> operator works exactly as you would expect.  For object types, the first either has an <code>equal()</code> method defined to work with the second or the code will fail to compile.  For reference comparison, the <code>===</code> operator (yes, three equal signs) is available.  Fortunately, there are few situations when it is needed.
+			For primitive types, the <code>==</code> operator works exactly as you would expect.  For object types, the first either has an <code>equal()</code> method defined to work with the second or the code will fail to compile.  For reference comparison, the <code>===</code> operator (yes, three equal signs) is available.  Fortunately, there are few situations when it's needed.
 			</p>
 			
 			<a href="#top"><small>Back to top</small></a><br/>
@@ -446,7 +446,7 @@ Complex c = a + b;
 
 		
 			<p>
-			In addition to the standard arithmetic operators, there is an interface for the bitwise operators <code>&amp;</code>, <code>|</code>, <code>^</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code>, <code>&lt;&lt;&lt;</code>, <code>&gt;&gt;&gt;</code>, and <code>~</code>, but they come as a bundle.  It's expected that they will only be useful for classes that have bitwise behavior similar to an integer, like <code>BigInteger</code>.
+			In addition to the standard arithmetic operators, there's an interface for the bitwise operators <code>&amp;</code>, <code>|</code>, <code>^</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code>, <code>&lt;&lt;&lt;</code>, <code>&gt;&gt;&gt;</code>, and <code>~</code>, but they come as a bundle.  It's expected that they will only be useful for classes that have bitwise behavior similar to an integer, like <code>BigInteger</code>.
 			</p>
 			
 			<p>
@@ -463,7 +463,7 @@ String drummer = band[3];
 </pre>
 
 			<p>
-			The <code>CanIndexStore&lt;V,K&gt;</code> interface has the <code>CanIndex&lt;V,K&gt;</code> interface and overloads the index operator (<code>[]</code>) further so that it can also store values into an index.  Consider the following code that stores values into a <code>HashMap</code> using array-like indexing.
+			There is also a <code>CanIndexStore&lt;V,K&gt;</code> interface that allows the index operator (<code>[]</code>) to be overloaded so that it can  store values into an index. Both interfaces can be implemented independently of each other, allowed classes that can load from an index, classes that can store to an index, and classes that can do both. Consider the following code that stores values into a <code>HashMap</code> using array-like indexing.
 			</p>
 			
 <pre class="prettyprint lang-shadow">
@@ -483,7 +483,7 @@ clan["Dennis Coles"] = "Ghostface Killah";
 			</p>
 			
 			<p>
-			The Shadow solution is that normal references can never be null, since most references never need to be: They are initialized to some non-null value or easily could be.  In Shadow, only references marked <code>nullable</code> or <code>weak</code> can be null.  In order to dereference them or store them into a regular reference, the normal approach is to use the <code>check</code> keyword inside of a <code>try</code> block with a matching <code>recover</code> block.  If the reference is null, execution will jump to the <code>recover</code> block.
+			The Shadow solution is that normal references can never be null, since most references never need to be: They are initialized to some non-null value or easily could be.  In Shadow, only references marked <code>nullable</code> can be null.  In order to dereference them or store them into a regular reference, the normal approach is to use the <code>check</code> keyword inside of a <code>try</code> block with a matching <code>recover</code> block.  If the reference is null, execution will jump to the <code>recover</code> block.
 			</p>
 			
 <pre class="prettyprint lang-shadow">
@@ -498,7 +498,7 @@ recover {
 </pre>
 
 			<p>
-			It seems annoying to deal with these <code>nullable</code> references, but they don't come up very often.  When they do come up, the code that you write reminds you of the cost of checking them.  Alternatively,  you can use the coalesce operator (<code>??</code>) to quickly use a non-null value as a default if the object under consideration is null.  In the following code, <code>"random junk"</code> will be stored in <code>notNull</code> only if <code>whoKnows</code> is null.
+			It seems annoying to deal with these <code>nullable</code> references, but they don't come up very often.  When they do come up, the code you write reminds you of the cost of checking them.  Alternatively,  you can use the coalesce operator (<code>??</code>) to quickly use a non-null value as a default if the object under consideration is null.  In the following code, <code>"random junk"</code> will be stored in <code>notNull</code> only if <code>whoKnows</code> is null.
 			</p>
 
 <pre class="prettyprint lang-shadow">
