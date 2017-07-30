@@ -21,7 +21,7 @@
 						<li><a href="linux/">Linux Installation</a></li>
 						<li><a href="mac/">Mac Installation</a></li>
 						<li><a href="windows/">Windows Installation</a></li>
-						<li><a href="plugins/">Plugins</a></li>
+						<li><a href="plugins/">Plug-ins</a></li>
 					</ul>
 				</div>
 			</div>
@@ -30,22 +30,22 @@
 			<h2>Downloading Shadow</h2>
 		
 			<p>
-			The Shadow 0.6 compiler has distributions for Linux, Mac OS X, and Windows.  Click one of the following links for more information about how to install Shadow on each of these platforms.
+			The Shadow 0.7.5 compiler has distributions for Linux, macOS, and Windows.  Click one of the following links for more information about how to install Shadow on each of these platforms.
 			</p>			
 			
 			<ul>
 				<li><a href="linux/">Linux</a></li>
-				<li><a href="mac/">Mac OS X</a></li>
+				<li><a href="mac/">macOS</a></li>
 				<li><a href="windows/">Windows</a></li>
 			</ul>
 			
 			
 			<p>
-			A few IDE and editor plugins are also available to help users develop software in Shadow.  Click on the link below for more information about available plugins.
+			A few IDE and editor plug-ins are also available to help users develop software in Shadow.  Click on the link below for more information about available plugins.
 			</p>
 						
 			<ul>
-				<li><a href="plugins/">Plugins</a></li>
+				<li><a href="plugins/">Plug-ins</a></li>
 			</ul>	
 			
 		</div>

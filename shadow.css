@@ -1,5 +1,5 @@
 html { height: 100%; width: 100%; margin: 0; padding: 0; }
-body { width: 100%; height: 100%; margin: 0; padding: 0; min-width: 60em; font-family: Verdana, Helvetica, Arial, sans-serif; background-color: rgb(204, 204, 204); }
+body { width: 100%; height: 100%; margin: 0; padding: 0; min-width: 60em; font-family: Verdana, Helvetica, Arial, sans-serif; background-color: rgb(225, 225, 225); }
 
 div.spacer { padding: 1em; margin: 0; }
 #container { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -6em; background-image:url('images/side.png'); background-repeat:repeat-y; background-position:left top;  }
@@ -14,7 +14,7 @@ div.menu-item { margin: 0; float: left; width: 20%; height: 100%; line-height: 1
 #footer div.spacer { border-top: solid 0.1em white;}
 #push { height: 6em; }
 
-div.download { width: 20em; background-color: rgb(2, 80, 57); border: solid thin black;margin-left: auto; margin-right: auto; text-align: center; font-size: 1.5em; } 
+div.download { width: 20em; color: white; background-color: rgb(2, 80, 57); border: solid 0.1em rgb(233,255,128); margin-left: auto; margin-right: auto; text-align: center; font-size: 1.5em; } 
 
 code { font-size: 1.3em; font-weight: bold; }
 tt { font-size: 1.3em; font-weight: bold; }
@@ -23,9 +23,9 @@ strong.tag { border: solid 0.1em black; background-color: rgb(233,255,128); colo
 div.box { margin-top: .5em; margin-bottom: .5em; padding: .5em; background-color: black; font-size: .9em; }
 div.note { position: absolute; width: 240px; left: 0; padding-left: 20px; padding-right: 20px; color: white; }
 
-table.shaded { border: solid 0.1em black; margin-left: auto; margin-right: auto; background-color: white; border-spacing: 0.1em; }
+table.shaded { margin-left: auto; margin-right: auto; background-color: white; border-spacing: 0.1em; }
 table.shaded th {	background-color: rgb(2, 80, 57); text-align: center; padding:.5em; color: white; font-weight: normal; }
-table.shaded tr:nth-child(even) {background-color: rgb(192,211,205)}
+table.shaded tr:nth-child(even) {background-color: rgb(195,229,226)}
 table.shaded tr:hover { background-color: rgb(233,255,128); }
 table.shaded td { text-align: center; padding:.5em; }
 
