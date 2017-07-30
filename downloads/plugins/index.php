@@ -1,13 +1,13 @@
 <?php
 	$path = '../../';
-	$subtitle = 'Downloads<br/>Plugins';
+	$subtitle = 'Downloads<br/>Plug-ins';
 	include $path . 'start.inc';	
 ?>
 	<meta name="author" content="Team Shadow" />
-	<meta name="description" content="Shadow Plugin Downloads">
+	<meta name="description" content="Shadow Plug-in Downloads">
 	<meta name="keywords" content="Shadow, language, downloads, plugins, syntax highlighter">
 <title>
-	Plugins - Downloads - Shadow
+	Plug-ins - Downloads - Shadow
 </title>
 </head>
 <body onload="prettyPrint();">
@@ -18,31 +18,41 @@
 		<div class="note">				
 				<div class="box">
 					<ul>
-						<li><a href="#eclipse">Eclipse Plugin</a></li>
+						<li><a href="#eclipse">Eclipse Plug-in</a></li>
 						<li><a href="#notepad">Notepad++ Syntax Highlighter</a></li>						
 					</ul>
 				</div>
 			</div>
 		
 		
-			<h2>Plugins</h2>
+			<h2>Plug-ins</h2>
 			
 			<p>
-			This page provides downloads for plugins, syntax highlighters, and other tools that might be helpful for developing software in Shadow.
+			This page provides downloads for plug-ins, syntax highlighters, and other tools that might be helpful for developing software in Shadow. We hope to add tools for many more platforms in the future.
 			</p>
 		
-			<h3><a name="eclipse">Eclipse Plugin</a></h3>
+			<h3><a name="eclipse">Eclipse Plug-in</a></h3>
 			
 			<p>
-			It's much easier to write Shadow code with syntax highlighting. Below is an Eclipse plugin that does syntax highlighting for Shadow.  In the future, we plan for greater integration with the Eclipse IDE (and other IDEs).
+			We provide an Eclipse plug-in for Shadow development with many useful features:
 			</p>
 			
 			<ul>
-				<li><a href="https://github.com/TeamShadow/plugin/releases/download/0.6/org.shadow-language_0.6.0.jar">Download Eclipse Plugin</a></li>
+				<li>Syntax highlighting</li>
+				<li>Parsing and type-checking errors and warnings reported as you type</li>
+				<li>Compiling and launching Shadow programs from the IDE, with redirected console I/O</li>
+				<li>Outline view for easy code navigation</li>
+				<li>Comment/uncomment code and documentation comment generation</li>
+				<li>Automatic code indentation</li>
 			</ul>
 			
 			<p>
-			To install the plugin, copy it into the <tt>eclipse/plugins</tt> directory and restart Eclipse. If you have an older plugin (e.g. <tt>org.shadow-language_0.5.0.jar</tt>), please delete it first.
+			To install the plug-in, click on the <strong>Help -> Install New Software...</strong> menu.  Once there, click the <strong>Add...</strong> button to add an update site.  Provide whatever name you like and enter the following location:<br/>
+			<tt>http://www.shadow-language.org/updates</tt>
+			</p>
+		
+			<p>
+			If you have an older Shadow plugin, please uninstall it from Eclipse first.
 			</p>	
 
 			<h3><a name="notepad">Notepad++ Syntax Highlighter</a></h3>
