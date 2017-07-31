@@ -83,7 +83,7 @@
 			
 			<br/>
 
-			<h3><a name="emacs">Vim Syntax Highlighter</a></h3>
+			<h3><a name="vim">Vim Syntax Highlighter</a></h3>
 			
 			<p>Like Emacs, <a href="http://www.vim.org/">vim</a> needs no introduction.  Below is a vim syntax file and a vim file-type detect file that allow syntax highlighting for Shadow in vim.</p>
 			
