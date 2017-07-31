@@ -17,9 +17,11 @@
 		
 		<div class="note">				
 				<div class="box">
-					<ul>
+					<ul>						
 						<li><a href="#eclipse">Eclipse Plug-in</a></li>
-						<li><a href="#notepad">Notepad++ Syntax Highlighter</a></li>						
+						<li><a href="#emacs">Emacs Syntax Highlighter</a></li>
+						<li><a href="#notepad">Notepad++ Syntax Highlighter</a></li>												
+						<li><a href="#vim">Vim Syntax Highlighter</a></li>						
 					</ul>
 				</div>
 			</div>
@@ -55,6 +57,7 @@
 			If you have an older Shadow plugin, please uninstall it from Eclipse first.
 			</p>				
 
+			<br/>
 
 			<h3><a name="emacs">Emacs Syntax Highlighter</a></h3>
 			
@@ -63,6 +66,8 @@
 			<ul>
 				<li><a href="https://raw.githubusercontent.com/TeamShadow/syntax-highlighters/master/Emacs/shadow-mode.el">Download Emacs Syntax Highlighting Major Mode for Shadow</a></li>
 			</ul>
+			
+			<br/>
 
 			<h3><a name="notepad">Notepad++ Syntax Highlighter</a></h3>
 			
@@ -75,6 +80,8 @@
 			<p>
 			To install the syntax highlighter, click on <strong>Define your language...</strong> under the <strong>Language</strong> menu in Notepad++.  In the dialog that opens, click on the <strong>Import...</strong> button and select the <tt>shadow-notepad.xml</tt> file you have just downloaded from the link above.			
 			</p>
+			
+			<br/>
 
 			<h3><a name="emacs">Vim Syntax Highlighter</a></h3>
 			
