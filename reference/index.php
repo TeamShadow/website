@@ -18,7 +18,7 @@
 			<h2>Reference</h2>
 			
 			<ul>
-				<li><a href="faq/">FAQ</a></br>Frequently asked questions</li>			
+				<li><a href="faq/">FAQ</a></br>Frequently asked questions</li><br/>		
 			
 				<li><a href="<?=$path?>documentation/">Shadow Library Documentation</a></br>Documentation for the Shadow standard library that accompanies Shadow 0.7.5.</li><br/>
 				

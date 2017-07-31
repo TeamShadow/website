@@ -1,6 +1,6 @@
 <?php
 	$path = '../../';
-	$subtitle = 'Reference<br/>Reserved Words';	
+	$subtitle = 'Reference<br/>Frequently Asked Questions';	
 	include $path . 'start.inc';	
 ?>
 	<meta name="author" content="Team Shadow" />
@@ -10,7 +10,7 @@
 		a small { float: right; color: gray; }	
 	</style>	
 <title>
-	Frequently Asked Questions - Shadow
+	Frequently Asked Questions - Reference - Shadow
 </title>
 </head>
 <body onload="prettyPrint();">
@@ -57,7 +57,7 @@
 		<h3><a name="involvement">Can I work on Shadow?</a></h3>
 		
 		<p>
-		Of course!  The GitHub repository for the compiler is <a href="https://github.com/TeamShadow/shadow/">here</a>.  Head over to the <a href="<?=$path?>Development/">Development</a> page for more information.
+		Of course!  The GitHub repository for the compiler is <a href="https://github.com/TeamShadow/shadow/">here</a>.  Head over to the <a href="<?=$path?>development/">Development</a> page for more information.
 		</p>
 		
 		<a href="#top"><small>Back to top</small></a><br/>	
@@ -74,19 +74,16 @@
 		<h3><a name="memory">How does Shadow do memory management?  Is it garbage-collected?</a></h3>
 		
 		<p>
-		At this point, Shadow is in its earliest alpha release, and we're still deciding on the best way to do memory management.  In other words, there's <em>no</em> memory management yet.  You can allocate memory, but there's no way to deallocate it.  It's a good thing that memory is cheap these days!
+		Release 0.7.5 adds garbage collection through reference counting.  Since mutable objects are not shared between threads in Shadow, reference counting allows garbage collection to be handled on a thread by thread basis.  In other words, there's no need for garbage collection pauses that lock up all threads.  Unfortunately, reference counting is also relatively slow, and our system does not deal with circular references at all yet.  Although reference counting will probably remain one aspect of garbage collection in Shadow, we hope to employ a hybrid approach, using some kind of ownership model as well.
 		</p>
 		
-		<p>
-		Don't worry: It's high on our list of priorities! For a variety of reasons, we're leaning toward a reference counting system as opposed to mark-and-sweep garbage collection.  Shadow will not allow fully user-controlled memory management because it's impossible to offer the safety guarantees we want in that model.
-		</p>
 		
 		<a href="#top"><small>Back to top</small></a><br/>	
 		
 		<h3><a name="parallel">Does Shadow support parallel computation?  How does that work?</a></h3>
 		
 		<p>
-		Parallel computation is central to the design of Shadow.  From the very beginning, our plan has been to make spawning threads easy for the user.  However, none of the parallel language features have been implemented in the compiler yet.		
+		Parallel computation is central to the design of Shadow.  From the very beginning, our plan has been to make spawning threads easy for the user.  However, none of the parallel language features have been implemented in the compiler yet. (They should be coming in the next release!)		
 		</p>
 		
 		<p>
@@ -99,7 +96,7 @@
 		<h3><a name="long">Why does it take so long to compile a Shadow program?</a></h3>				
 		
 		<p>
-		The issue is related to partial compilation.  The reference Shadow compiler currently recompiles <em>all</em> of the standard library for every program.  In the relatively near future, we will not recompile anything that is up-to-date.  At the moment, the compiler is in such active development that the way LLVM output is generated changes on a weekly basis.  If we didn't recompile everything every time, any change to the compiler would invalidate existing intermediate files.
+		<strong>Update:</strong> As of Shadow 0.7.5, it no longer takes nearly as long to compile a Shadow program!  After installation, compiling your first Shadow program may still take a while because most of the standard library has to be compiled for the first time.  It's not unusual for that first compilation to take 15-30 seconds.  After that first compilation, however, the process shouldn't take nearly as long.  Our compiler is written in Java, so there is some inevitable latency as the JVM fires up.
 		</p>
 		
 		<a href="#top"><small>Back to top</small></a><br/>	
@@ -123,7 +120,11 @@
 		</p>
 		
 		<p>
-		As a contrast, none of Shadow's members, methods, or inner classes are <code>static</code>.  One small exception are those members declared with the <code>constant</code> keyword, which are in fact constants computed at compile time and visible everywhere.  Most implementations of the singleton design pattern depend on a <code>static</code> member.  Instead, we provide the <code>singleton</code> keyword, which declares a special singleton class.  Unlike traditional singletons which have a maximum of one instance for the entire program, Shadow singletons have a maximum of one instance <em>per thread</em>, to prevent unsafe sharing.
+		As a contrast, none of Shadow's members or methods are <code>static</code>.  One small exception are those members declared with the <code>constant</code> keyword, which are in fact constants computed at compile time and visible everywhere.  Most implementations of the singleton design pattern depend on a <code>static</code> member.  Instead, we provide the <code>singleton</code> keyword, which declares a special singleton class.  Unlike traditional singletons which have a maximum of one instance for the entire program, Shadow singletons have a maximum of one instance <em>per thread</em>, to prevent unsafe sharing.
+		</p>
+		
+		<p>
+		Java takes the route of having <code>static</code> nested classes and "true" inner classes.  In the Java world, a "true" inner class object is actually associated with a particular outer class object and can read its members and call its methods directly.  This design is ideal for something like an iterator, which is intended to have complete access to one particular list.  However, many students and even some professional Java developers don't understand inner class usage correctly.  Furthermore, this kind of inner class design causes additional complexity in the compiler and the run-time system.  The inner classes in both C++ and C# behave like <code>static</code> nested classes in Java: Each is a class in its own right whose visibility may be restricted to methods within its outer class.  Although these inner classes do not automatically have a reference to an outer class object, they can manipulate the <code>private</code> and <code>protected</code> members of such an object if they get a reference to it.  Shadow 0.7.5 adopts the approach of C++ and C#, providing inner classes as a way to give finer-grained control over visibility and access but not tying inner class objects to particular outer class objects.
 		</p>
 				
 		<a href="#top"><small>Back to top</small></a><br/>	
@@ -134,10 +135,9 @@
 		Quite a few!  We have already mentioned a couple of issues, but here's a list of what's absolutely critical.
 		</p>
 		
-		<ul>
-			<li>Memory management</li>
+		<ul>			
 			<li>Threading and message passing</li>
-			<li>Method pointers</li>
+			<li>Method references</li>
 			<li>Local methods (closures)</li>
 			<li>Enums</li>
 		</ul>
@@ -146,12 +146,11 @@
 		There are also some issues that are either less critical or can be addressed incrementally.  At a minimum, these include the following.
 		</p>
 		
-		<ul>
-			<li>Partial compilation</li>
+		<ul>			
 			<li>Expanded standard library</li>
-			<li>Better data flow and control flow analysis for improved optimization</li>
+			<li>Better memory management</li>
 			<li>Faster and more accurate conversion from floating point values to <code>String</code> representations and back</li>
-			<li>Eclipse plug-in with functionality beyond syntax highlighting</li>
+			<li>Plug-ins for other popular IDEs such as <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> and <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 		</ul>
 		
 		
@@ -160,7 +159,7 @@
 		<h3><a name="compiler">How does the Shadow compiler work?</a></h3>
 		
 		<p>
-		The reference Shadow compiler is almost entirely written in Java.  It uses <a href="https://java.net/projects/javacc">JavaCC</a> to build an abstract syntax tree (AST) for a program. During the process, some dependency checking is done to see which other Shadow files will need to be compiled, adding them in if necessary. Then, it performs typechecking on the AST and converts it into canonical three-address code (TAC).  Last, it converts the TAC into LLVM.  At that point, the LLVM compiler turns the output into object code for the appropriate platform. Finally, all the object code is linked together with a linker, usually <tt>gcc</tt>.
+		The reference Shadow compiler is almost entirely written in Java.  It uses <a href="http://www.antlr.org/">ANTLR 4</a> to build an abstract syntax tree (AST) for a program. During the process, some dependency checking is done to see which other Shadow files will need to be compiled, adding them in if necessary. Then, it performs typechecking on the AST and converts it into canonical three-address code (TAC).  Last, it converts the TAC into LLVM IR.  At that point, the LLVM optimizer turns the LLVM IR into optimized LLVM bitcode, which can be reused in future compilations if the source file remains unchanged.  Then, the LLVM compiler turns the LLVM bitcode into machine-dependent object code. Finally, all the object code is linked together with a linker, usually <tt>gcc</tt>.
 		</p>
 		
 		<a href="#top"><small>Back to top</small></a><br/>	

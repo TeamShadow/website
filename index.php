@@ -71,7 +71,7 @@
 				<li>Reified generics</li>
 				<li>Signed and unsigned primitive types</li>
 				<li>Language-supported singletons</li>
-				<li>Reference counting for garbage collections</li>
+				<li>Garbage collection through reference counting</li>
 				<li>Built-in UTF-8 support</li>
 			</ul>
 			
