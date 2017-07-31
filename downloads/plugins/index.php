@@ -53,19 +53,41 @@
 		
 			<p>
 			If you have an older Shadow plugin, please uninstall it from Eclipse first.
-			</p>	
+			</p>				
+
+
+			<h3><a name="emacs">Emacs Syntax Highlighter</a></h3>
+			
+			<p><a href="https://www.gnu.org/software/emacs/">Emacs</a> needs no introduction.  Below is an Emacs Lisp file that defines a Shadow major mode for Emacs with simple syntax highlighting.</p>
+			
+			<ul>
+				<li><a href="https://raw.githubusercontent.com/TeamShadow/syntax-highlighters/master/Emacs/shadow-mode.el">Download Emacs Syntax Highlighting Major Mode for Shadow</a></li>
+			</ul>
 
 			<h3><a name="notepad">Notepad++ Syntax Highlighter</a></h3>
 			
 			<p><a href="https://notepad-plus-plus.org/">Notepad++</a> is a popular, free text editor for Windows.  Below is an XML file that defines syntax highlighting for Shadow inside of Nodepad++.</p>
 			
 			<ul>
-				<li><a href="http://www.shadow-language.org/downloads/plugins/shadow-notepad.xml">Download Notepad++ Syntax Highlighting Definitions for Shadow</a></li>
+				<li><a href="https://raw.githubusercontent.com/TeamShadow/syntax-highlighters/master/Notepad%2B%2B/shadow-notepad.xml">Download Notepad++ Syntax Highlighting Definitions for Shadow</a></li>
 			</ul>
 			
 			<p>
 			To install the syntax highlighter, click on <strong>Define your language...</strong> under the <strong>Language</strong> menu in Notepad++.  In the dialog that opens, click on the <strong>Import...</strong> button and select the <tt>shadow-notepad.xml</tt> file you have just downloaded from the link above.			
-			</p>	
+			</p>
+
+			<h3><a name="emacs">Vim Syntax Highlighter</a></h3>
+			
+			<p>Like Emacs, <a href="http://www.vim.org/">vim</a> needs no introduction.  Below is a vim syntax file and a vim file-type detect file that allow syntax highlighting for Shadow in vim.</p>
+			
+			<ul>
+				<li><a href="https://raw.githubusercontent.com/TeamShadow/syntax-highlighters/master/vim/syntax/shadow.vim">Vim Syntax File</a></li>
+				<li><a href="https://raw.githubusercontent.com/TeamShadow/syntax-highlighters/master/vim/ftdetect/shadow.vim">Vim File-Type Detect File</a></li>
+			</ul>
+
+			<p>
+			To install the syntax highlighter, store the syntax file into <tt>~/.vim/syntax/</tt> and store the file-type detect file into <tt>~/.vim/ftdetect/</tt>.			
+			</p>									
 			
 		</div>
 	</div>
