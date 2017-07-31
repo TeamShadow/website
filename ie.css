@@ -2,7 +2,6 @@ body { font-size: 80%; }
 
 
 a { text-decoration: none; font-weight: bold; color: black; }
-a:hover { text-decoration: underline; }
 #footer a { color: gray; }
 #header a { color: black; }
 #menu a { color: white; }
