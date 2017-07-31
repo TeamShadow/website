@@ -34,6 +34,7 @@ table.shaded tr:hover { background-color: rgb(233,255,128); }
 table.shaded td { text-align: center; padding:.5em; }
 
 pre { display: block; padding: .75em }
+pre.terminal { background-color: black; color: white; border: solid 0.1em white; }
 
 ul {list-style-type: square; }
 

@@ -18,13 +18,13 @@
 			<h2>Reference</h2>
 			
 			<ul>
-				<li><a href="<?=$path?>/documentation/">Shadow Library Documentation</a></br>Documentation for the Shadow standard library that accompanies Shadow 0.6.</li><br/>
+				<li><a href="<?=$path?>/documentation/">Shadow Library Documentation</a></br>Documentation for the Shadow standard library that accompanies Shadow 0.7.5.</li><br/>
 				
-				<li><a href="reserved/">Reserved Words</a></br>Reserved words in Shadow 0.6</li>
+				<li><a href="reserved/">Reserved Words</a></br>Reserved words in Shadow 0.7.5</li>
 			</ul>
 						
 			<p>
-			Additional reference material including a grammar and formal language specification are planned.  Until we can get this reference material created, please look at the <a href="<?=$path?>/features">Features</a> page for major differences from Java.  Once you download the Shadow compiler, explore <tt>shadow/utility</tt> for information about Shadow utility classes and <tt>shadow/test</tt> for some example Shadow programs.
+			Additional reference material including a grammar and formal language specification are planned.  For more information, please look at the <a href="<?=$path?>/features">Features</a> page for major differences from Java and <a href="<?=$path?>/tutorials">Tutorials</a> for tutorials on how to write Shadow.
 			</p>			
 
 		</div>
