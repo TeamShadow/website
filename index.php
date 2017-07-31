@@ -18,7 +18,7 @@
 			<div class="note">				
 				<strong class="tag">News</strong><br/>
 				<div class="box">					
-					Shadow 0.6 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.6-beta">GitHub</a> or head over the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.6 has faster compile times, cleaner syntax, fewer bugs, and Mac support!					
+					Shadow 0.7.5 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.7.5-beta">GitHub</a> or head over the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.7.5 adds garbage collection, faster compile times, fewer bugs, and better Mac support!					
 				</div>
 			</div>		
 		
@@ -36,7 +36,7 @@
 			<div class="note">				
 				<strong class="tag">FAQ</strong><br/>
 				<div class="box">					
-					Check out the <a href="faq/">FAQ</a> for some quick answers about Shadow.
+					Check out the <a href="reference/faq/">FAQ</a> for some quick answers about Shadow.
 				</div>
 			</div>
 			
@@ -71,11 +71,12 @@
 				<li>Reified generics</li>
 				<li>Signed and unsigned primitive types</li>
 				<li>Language-supported singletons</li>
+				<li>Reference counting for garbage collections</li>
 				<li>Built-in UTF-8 support</li>
 			</ul>
 			
 			<p>
-			Want to know more?  Head over to the <a href="features/">Features</a> page.  If you have more general questions, check out the <a href="faq/">FAQ</a>.
+			Want to know more?  Head over to the <a href="features/">Features</a> page.  If you have more general questions, check out the <a href="reference/faq/">FAQ</a>.
 			</p>
 			
 		</div>
