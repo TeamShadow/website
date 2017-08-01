@@ -15,10 +15,10 @@
 	<div id="content">
 		<div class="spacer">
 			<h2>Shadow Tutorials</h2>
-			<p>Currently, only a single, introductory tutorial has been written. An entire series of detailed tutorials is under development. In the meantime, see the <a href="../features/">Features</a> page for more language information.</p>			
+			<p>The following tutorials cover only basic compiler usage and the most rudimentary Shadow syntax. An entire series of detailed tutorials is under development. In the meantime, see the <a href="../features/">Features</a> page for more language information.</p>			
 			<ul>
 				<li><strong><a href="./compiler/">Using the Shadow Compiler</a></strong></li>
-				<li><strong><a href="./starting/">Getting Started - &quot;Hello, World!&quot;</a></strong></li>
+				<li><strong><a href="./starting/">Getting Started - Your First Shadow Program</a></strong></li>
 			</ul>
 		</div>
 	</div>
