@@ -10,7 +10,7 @@ pre .typ { color: rgb(0, 0, 128); }
 pre .lit { color: rgb(0, 128, 0); } /* literal - pink */
 pre .pun { color: #000 }    /* punctuation */
 pre .pln { color: #000 }    /* plaintext */
-pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
+pre .tag { color: #008; font-weight: bold } /* html/xml tag    - lightyellow */
 pre .atn { color: #000; font-weight: bold } /* attribute name  - khaki */
 pre .atv { color: #000} /* attribute value - pink */
 pre .dec { color: rgb(0, 128, 0);} /* decimal         - was lightgreen */
