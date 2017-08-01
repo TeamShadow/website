@@ -159,7 +159,7 @@
 		<h3><a name="compiler">How does the Shadow compiler work?</a></h3>
 		
 		<p>
-		The reference Shadow compiler is almost entirely written in Java.  It uses <a href="http://www.antlr.org/">ANTLR 4</a> to build an abstract syntax tree (AST) for a program. During the process, some dependency checking is done to see which other Shadow files will need to be compiled, adding them in if necessary. Then, it performs typechecking on the AST and converts it into canonical three-address code (TAC).  Last, it converts the TAC into LLVM IR.  At that point, the LLVM optimizer turns the LLVM IR into optimized LLVM bitcode, which can be reused in future compilations if the source file remains unchanged.  Then, the LLVM compiler turns the LLVM bitcode into machine-dependent object code. Finally, all the object code is linked together with a linker, usually <tt>gcc</tt>.
+		The reference Shadow compiler is almost entirely written in Java.  It uses <a href="http://www.antlr.org/">ANTLR 4</a> to build an abstract syntax tree (AST) for a program. During the process, some dependency checking is done to see which other Shadow files will need to be compiled, adding them in if necessary. Then, it performs type-checking on the AST and converts it into canonical three-address code (TAC).  Last, it converts the TAC into LLVM IR.  At that point, the LLVM optimizer turns the LLVM IR into optimized LLVM bitcode, which can be reused in future compilations if the source file remains unchanged.  Then, the LLVM compiler turns the LLVM bitcode into machine-dependent object code. Finally, all the object code is linked together with a linker, usually <tt>gcc</tt>.
 		</p>
 		
 		<a href="#top"><small>Back to top</small></a><br/>	
