@@ -23,94 +23,94 @@
 
 			<table class="shaded">
 				<tr>
-					<td>abstract</td>
-					<td>and</td>
-					<td>assert</td>
-					<td>boolean</td>
-					<td>break</td>
-					<td>byte</td>
-					<td>case</td>
+					<td><code>abstract</code></td>
+					<td><code>and</code></td>
+					<td><code>assert</code></td>
+					<td><code>boolean</code></td>
+					<td><code>break</code></td>
+					<td><code>byte</code></td>
+					<td><code>case</code></td>
 				</tr>
 				<tr>
-					<td>cast</td>
-					<td>catch</td>
-					<td>check</td>
-					<td>class</td>
-					<td>code</td>
-					<td>constant</td>
-					<td>continue</td>
+					<td><code>cast</code></td>
+					<td><code>catch</code></td>
+					<td><code>check</code></td>
+					<td><code>class</code></td>
+					<td><code>code</code></td>
+					<td><code>constant</code></td>
+					<td><code>continue</code></td>
 				</tr>
 				<tr>
-					<td>copy</td>
-					<td>create</td>
-					<td>default</td>
-					<td>destroy</td>
-					<td>do</td>
-					<td>double</td>
-					<td>else</td>
+					<td><code>copy</code></td>
+					<td><code>create</code></td>
+					<td><code>default</code></td>
+					<td><code>destroy</code></td>
+					<td><code>do</code></td>
+					<td><code>double</code></td>
+					<td><code>else</code></td>
 				</tr>
 				<tr>
-					<td>enum</td>
-					<td>exception</td>
-					<td>extern</td>
-					<td>false</td>
-					<td>finally</td>
-					<td>float</td>
-					<td>for</td>
+					<td><code>enum</code></td>
+					<td><code>exception</code></td>
+					<td><code>extern</code></td>
+					<td><code>false</code></td>
+					<td><code>finally</code></td>
+					<td><code>float</code></td>
+					<td><code>for</code></td>
 				</tr>
 				<tr>
-					<td>foreach</td>
-					<td>freeze</td>
-					<td>get</td>
-					<td>if</td>
-					<td>immutable</td>
-					<td>import</td>
-					<td>in</td>
+					<td><code>foreach</code></td>
+					<td><code>freeze</code></td>
+					<td><code>get</code></td>
+					<td><code>if</code></td>
+					<td><code>immutable</code></td>
+					<td><code>import</code></td>
+					<td><code>in</code></td>
 				</tr>
 				<tr>
-					<td>int</td>
-					<td>interface</td>
-					<td>is</td>
-					<td>locked</td>
-					<td>long</td>
-					<td>native</td>
-					<td>null</td>
+					<td><code>int</code></td>
+					<td><code>interface</code></td>
+					<td><code>is</code></td>
+					<td><code>locked</code></td>
+					<td><code>long</code></td>
+					<td><code>native</code></td>
+					<td><code>null</code></td>
 				</tr>
 				<tr>
-					<td>nullable</td>
-					<td>or</td>
-					<td>private</td>
-					<td>protected</td>
-					<td>public</td>
-					<td>readonly</td>
-					<td>recover</td>
+					<td><code>nullable</code></td>
+					<td><code>or</code></td>
+					<td><code>private</code></td>
+					<td><code>protected</code></td>
+					<td><code>public</code></td>
+					<td><code>readonly</code></td>
+					<td><code>recover</code></td>
 				</tr>
 				<tr>
-					<td>return</td>
-					<td>send</td>
-					<td>set</td>
-					<td>short</td>
-					<td>singleton</td>
-					<td>skip</td>
-					<td>spawn</td>
+					<td><code>return</code></td>
+					<td><code>send</code></td>
+					<td><code>set</code></td>
+					<td><code>short</code></td>
+					<td><code>singleton</code></td>
+					<td><code>skip</code></td>
+					<td><code>spawn</code></td>
 				</tr>
 				<tr>
-					<td>super</td>
-					<td>switch</td>
-					<td>this</td>
-					<td>throw</td>
-					<td>true</td>
-					<td>try</td>
-					<td>ubyte</td>
+					<td><code>super</code></td>
+					<td><code>switch</code></td>
+					<td><code>this</code></td>
+					<td><code>throw</code></td>
+					<td><code>true</code></td>
+					<td><code>try</code></td>
+					<td><code>ubyte</code></td>
 				</tr>
 				<tr>
-					<td>uint</td>
-					<td>ulong</td>
-					<td>ushort</td>
-					<td>var</td>
-					<td>weak</td>
-					<td>while</td>
-					<td>xor</td>
+					<td><code>uint</code></td>
+					<td><code>ulong</code></td>
+					<td><code>ushort</code></td>
+					<td><code>var</code></td>
+					<td><code>weak</code></td>
+					<td><code>while</code></td>
+					<td><code>xor</code></td>
 				</tr>
 			</table>
 			

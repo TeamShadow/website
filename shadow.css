@@ -30,7 +30,6 @@ div.box a { font-weight: normal; color: rgb(233,255,128); }
 table.shaded { margin-left: auto; margin-right: auto; background-color: white; border-spacing: 0.1em; }
 table.shaded th {	background-color: rgb(3, 129, 92); text-align: center; padding:.5em; color: white; }
 table.shaded tr:nth-child(even) {background-color: rgb(235,255,249)}
-table.shaded tr:hover { background-color: rgb(233,255,128); }
 table.shaded td { text-align: center; padding:.5em; }
 
 pre { display: block; padding: .75em }
