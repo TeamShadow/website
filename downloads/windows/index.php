@@ -68,8 +68,9 @@
 			
 		</div>
 	</div>
+	<?php include $path . 'footer.inc'; ?>
 </div>
-<?php include $path . 'footer.inc'; ?>
+
 <div id="sidebar">
 	<div id="spacer">
 		<ul>
