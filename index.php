@@ -13,14 +13,8 @@
 <body onload="prettyPrint();">
 <div id="container">	
 	<div id="content">
-		<div class="spacer">
-		
-			<div class="note">				
-				<strong class="tag">News</strong><br/>
-				<div class="box">					
-					Shadow 0.7.5 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.7.5-beta">GitHub</a> or head over the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.7.5 adds garbage collection, faster compile times, fewer bugs, and better Mac support!					
-				</div>
-			</div>		
+		<div class="spacer">	
+				
 		
 			<h2>What is Shadow?</h2>
 		
@@ -30,15 +24,8 @@
 			
 			<p>
 			Shadow comes out of the C-like family of languages and shares some syntax with C and C++ but even more with Java and C#.  It's a statically-typed language that emphasizes clarity.  Don't get us wrong: Dynamically typed languages like Python, Ruby, and JavaScript are great for productivity, but sometimes you want stronger guarantees that a program does what you think it does.  Ultimately, it's a question of the right tool for the right job.
-			</p>
+			</p>				
 			
-						
-			<div class="note">				
-				<strong class="tag">FAQ</strong><br/>
-				<div class="box">					
-					Check out the <a href="reference/faq/">FAQ</a> for some quick answers about Shadow.
-				</div>
-			</div>
 			
 			<h3>Why can't a language be fast and safe?</h3>
 			
@@ -81,10 +68,26 @@
 			
 		</div>
 	</div>
-	<div id="push"></div>
+	<?php include $path . 'footer.inc'; ?>
+	<div id="sidebar">
+		<div id="spacer">		
+						
+			<div class="tag">News</div><br/>
+			<div class="box">					
+				Shadow 0.7.5 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.7.5-beta">GitHub</a> or head over the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.7.5 adds garbage collection, faster compile times, fewer bugs, and better Mac support!					
+			</div>
+		
+			<br/>
+		
+			<div class="tag">FAQ</div>
+			<div class="box">					
+				Check out the <a href="reference/faq/">FAQ</a> for some quick answers about Shadow.
+			</div>
+			
+		</div>
+	</div>
 </div>
-<?php
-	include $path . 'footer.inc';
+<?php	
 	include $path . 'header.inc';
 	include $path . 'menu.inc';	
 ?>

@@ -13,19 +13,7 @@
 <body onload="prettyPrint();">
 <div id="container">	
 	<div id="content">
-		<div class="spacer">
-		
-		<div class="note">				
-				<div class="box">
-					<ul>						
-						<li><a href="#eclipse">Eclipse Plug-in</a></li>
-						<li><a href="#emacs">Emacs Syntax Highlighter</a></li>
-						<li><a href="#notepad">Notepad++ Syntax Highlighter</a></li>												
-						<li><a href="#vim">Vim Syntax Highlighter</a></li>						
-					</ul>
-				</div>
-			</div>
-		
+		<div class="spacer">		
 		
 			<h2>Plug-ins</h2>
 			
@@ -98,10 +86,19 @@
 			
 		</div>
 	</div>
-	<div id="push"></div>
+	<?php include $path . 'footer.inc'; ?>
+	<div id="sidebar">
+		<div id="spacer">
+			<ul>						
+				<li><a href="#eclipse">Eclipse Plug-in</a></li>
+				<li><a href="#emacs">Emacs Syntax Highlighter</a></li>
+				<li><a href="#notepad">Notepad++ Syntax Highlighter</a></li>												
+				<li><a href="#vim">Vim Syntax Highlighter</a></li>						
+			</ul>
+		</div>
+	</div>
 </div>
 <?php
-	include $path . 'footer.inc';
 	include $path . 'header.inc';
 	include $path . 'menu.inc';	
 ?>

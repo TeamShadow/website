@@ -15,17 +15,6 @@
 	<div id="content">
 		<div class="spacer">
 		
-		<div class="note">				
-				<div class="box">
-					<ul>
-						<li><a href="#prerequisites">Prerequisites</a></li>						
-						<li><a href="#installation">Installation</a></li>
-						<li><a href="#older">Older Versions</a></li>						
-					</ul>
-				</div>
-			</div>
-		
-		
 			<h2>macOS Installation</h2>
 		
 			<p>
@@ -93,10 +82,18 @@ source ~/.bash_profile
 			
 		</div>
 	</div>
-	<div id="push"></div>
+	<?php include $path . 'footer.inc'; ?>
+	<div id="sidebar">
+		<div id="spacer">
+			<ul>
+				<li><a href="#prerequisites">Prerequisites</a></li>						
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#older">Older Versions</a></li>						
+			</ul>
+		</div>
+	</div>
 </div>
 <?php
-	include $path . 'footer.inc';
 	include $path . 'header.inc';
 	include $path . 'menu.inc';	
 ?>

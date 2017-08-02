@@ -18,28 +18,6 @@
 	<div id="content">
 		<div class="spacer">
 		
-			<div class="note">				
-				<div class="box">
-					<ul>
-						<li><a href="#sequences">Sequences</a></li>
-						<li><a href="#multiple">Returning multiple values</a></li>
-						<li><a href="#var"><code>var</code> type</a></li>
-						<li><a href="#cat">Cat operator</a></li>
-						<li><a href="#properties">Properties</a></li>
-						<li><a href="#singletons">Singletons</a></li>
-						<li><a href="#immutable">Immutable classes and references</a></li>						
-						<li><a href="#copying">Deep copying</a></li>						
-						<li><a href="#equals">Useful <code>==</code> operator</a></li>
-						<li><a href="#overloading">(Limited) operator overloading</a></li>						
-						<li><a href="#nonull">No null reference exceptions</a></li>
-						<li><a href="#unsigned">Unsigned types</a></li>
-						<li><a href="#literals">Numeric types and literals</a></li>
-						<li><a href="#utf8">UTF-8 support</a></li>
-					</ul>
-				</div>
-			</div>
-		
-		
 			<h2>Dragging people into the Shadow</h2>
 		
 			<p>
@@ -628,10 +606,29 @@ String notNull = whoKnows ?? "random junk";
 			<a href="#top"><small>Back to top</small></a><br/>				
 		</div>
 	</div>
-	<div id="push"></div>
+	<?php include $path . 'footer.inc'; ?>
+	<div id="sidebar">
+		<div id="spacer">
+			<ul>
+				<li><a href="#sequences">Sequences</a></li>
+				<li><a href="#multiple">Returning multiple values</a></li>
+				<li><a href="#var"><code>var</code> type</a></li>
+				<li><a href="#cat">Cat operator</a></li>
+				<li><a href="#properties">Properties</a></li>
+				<li><a href="#singletons">Singletons</a></li>
+				<li><a href="#immutable">Immutable classes and references</a></li>						
+				<li><a href="#copying">Deep copying</a></li>						
+				<li><a href="#equals">Useful <code>==</code> operator</a></li>
+				<li><a href="#overloading">(Limited) operator overloading</a></li>						
+				<li><a href="#nonull">No null reference exceptions</a></li>
+				<li><a href="#unsigned">Unsigned types</a></li>
+				<li><a href="#literals">Numeric types and literals</a></li>
+				<li><a href="#utf8">UTF-8 support</a></li>
+			</ul>		
+		</div>
+	</div>
 </div>
 <?php
-	include $path . 'footer.inc';
 	include $path . 'header.inc';
 	include $path . 'menu.inc';	
 ?>

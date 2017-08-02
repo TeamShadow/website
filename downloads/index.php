@@ -15,18 +15,6 @@
 	<div id="content">
 		<div class="spacer">
 		
-		<div class="note">				
-				<div class="box">
-					<ul>
-						<li><a href="linux/">Linux Installation</a></li>
-						<li><a href="mac/">Mac Installation</a></li>
-						<li><a href="windows/">Windows Installation</a></li>
-						<li><a href="plugins/">Plug-ins</a></li>
-					</ul>
-				</div>
-			</div>
-		
-		
 			<h2>Downloading Shadow</h2>
 		
 			<p>
@@ -50,10 +38,19 @@
 			
 		</div>
 	</div>
-	<div id="push"></div>
+	<?php include $path . 'footer.inc'; ?>
+	<div id="sidebar">
+		<div id="spacer">
+			<ul>
+				<li><a href="linux/">Linux Installation</a></li>
+				<li><a href="mac/">Mac Installation</a></li>
+				<li><a href="windows/">Windows Installation</a></li>
+				<li><a href="plugins/">Plug-ins</a></li>
+			</ul>
+		</div>
+	</div>
 </div>
 <?php
-	include $path . 'footer.inc';
 	include $path . 'header.inc';
 	include $path . 'menu.inc';	
 ?>

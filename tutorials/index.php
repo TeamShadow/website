@@ -22,10 +22,13 @@
 			</ul>
 		</div>
 	</div>
-	<div id="push"></div>
+	<?php include $path . 'footer.inc'; ?>
+	<div id="sidebar">
+		<div id="spacer">
+		</div>
+	</div>
 </div>
 <?php
-	include $path . 'footer.inc';
 	include $path . 'header.inc';
 	include $path . 'menu.inc';	
 ?>
