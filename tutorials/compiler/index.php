@@ -103,12 +103,12 @@ usage: shadowc &lt;mainSource.shadow&gt; [-o &lt;output&gt;] [-c &lt;config.xml&
 <p>All LLVM tools are capable of automatically detecting the correct triple for a given platform. If LLVM is properly installed, the command <tt>llc --version</tt> will display information including the default triple. A compiled version of this tool comes with the Windows installation of Shadow, and can be run from the associated directory. However, the Windows platform currently has limitations. See the <a href="#windows">Windows</a> section for details.</p>
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">
-		</div>
+</div>	
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">
 	</div>
-</div>		
+</div>	
 <?php 
 	include $path . 'header.inc';
 	include $path . 'menu.inc';		

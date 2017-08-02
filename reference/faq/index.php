@@ -175,24 +175,24 @@
 			
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">
-			<ul>
-				<li><a href="#name">Where does the name Shadow come from?</a></li>
-				<li><a href="#who">Who is developing the Shadow language?</a></li>
-				<li><a href="#involvement">Can I work on Shadow?</a></li>
-				<li><a href="#bug">I found a bug!</a></li>
-				<li><a href="#memory">How does Shadow do memory management?  Is it garbage-collected?</a></li>
-				<li><a href="#parallel">Does Shadow support parallel computation?  How does that work?</a></li>
-				<li><a href="#long">Why does it take so long to compile a Shadow program?</a></li>				
-				<li><a href="#features">Why doesn't feature X work the way it does in language Y?</a></li>
-				<li><a href="#static">What happened to the <code>static</code> keyword?</a></li>
-				<li><a href="#todo">What major features are left to be implemented in Shadow?</a></li>				
-				<li><a href="#compiler">How does the Shadow compiler work?</a></li>
-				<li><a href="#licensing">How is Shadow licensed?</a></li>
-			</ul>		
-		</div>
+</div>
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">
+		<ul>
+			<li><a href="#name">Where does the name Shadow come from?</a></li>
+			<li><a href="#who">Who is developing the Shadow language?</a></li>
+			<li><a href="#involvement">Can I work on Shadow?</a></li>
+			<li><a href="#bug">I found a bug!</a></li>
+			<li><a href="#memory">How does Shadow do memory management?  Is it garbage-collected?</a></li>
+			<li><a href="#parallel">Does Shadow support parallel computation?  How does that work?</a></li>
+			<li><a href="#long">Why does it take so long to compile a Shadow program?</a></li>				
+			<li><a href="#features">Why doesn't feature X work the way it does in language Y?</a></li>
+			<li><a href="#static">What happened to the <code>static</code> keyword?</a></li>
+			<li><a href="#todo">What major features are left to be implemented in Shadow?</a></li>				
+			<li><a href="#compiler">How does the Shadow compiler work?</a></li>
+			<li><a href="#licensing">How is Shadow licensed?</a></li>
+		</ul>		
 	</div>
 </div>
 <?php

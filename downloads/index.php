@@ -38,16 +38,16 @@
 			
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">
-			<ul>
-				<li><a href="linux/">Linux Installation</a></li>
-				<li><a href="mac/">Mac Installation</a></li>
-				<li><a href="windows/">Windows Installation</a></li>
-				<li><a href="plugins/">Plug-ins</a></li>
-			</ul>
-		</div>
+</div>
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">
+		<ul>
+			<li><a href="linux/">Linux Installation</a></li>
+			<li><a href="mac/">Mac Installation</a></li>
+			<li><a href="windows/">Windows Installation</a></li>
+			<li><a href="plugins/">Plug-ins</a></li>
+		</ul>
 	</div>
 </div>
 <?php

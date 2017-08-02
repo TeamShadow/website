@@ -71,14 +71,14 @@
 			
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">
-			<ul>
-				<li><a href="#compiler">Shadow Compiler</a></li>
-				<li><a href="#plugin">Shadow Eclipse Plug-in</a></li>					
-			</ul>		
-		</div>
+</div>
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">
+		<ul>
+			<li><a href="#compiler">Shadow Compiler</a></li>
+			<li><a href="#plugin">Shadow Eclipse Plug-in</a></li>					
+		</ul>		
 	</div>
 </div>
 <?php

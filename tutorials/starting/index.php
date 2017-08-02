@@ -85,12 +85,12 @@ Console.printLine(&quot;Hello, world!&quot;);
 <p><code>Console</code>, however, is a special kind of class called a singleton. This means that only one <code>Console</code> object can exist within the entire program (in reality, within an individual thread of the program). Normally, an object is created using the <code>create</code> keyword. However, a singleton is created in the first method that uses it. Any later uses of the singleton will retrieve the existing object. In this case, the <code>Console</code> command gives us access to the <code>Console</code> object which has the ability to print out information using its <code>printLine()</code> method described above.  Shadow syntax requires that the name of an object and the name of the method that is being called are separated by a dot.</p>
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">
-		</div>
-	</div>
 </div>		
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">
+	</div>
+</div>
 <?php 
 	include $path . 'header.inc';
 	include $path . 'menu.inc';		

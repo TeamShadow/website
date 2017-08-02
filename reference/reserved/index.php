@@ -116,12 +116,12 @@
 			
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">
-		</div>
+</div>	
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">
 	</div>
-</div>		
+</div>
 <?php 
 	include $path . 'header.inc';
 	include $path . 'menu.inc';		

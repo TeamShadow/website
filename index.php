@@ -68,23 +68,23 @@
 			
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">		
-						
-			<div class="tag">News</div><br/>
-			<div class="box">					
-				Shadow 0.7.5 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.7.5-beta">GitHub</a> or head over the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.7.5 adds garbage collection, faster compile times, fewer bugs, and better Mac support!					
-			</div>
-		
-			<br/>
-		
-			<div class="tag">FAQ</div>
-			<div class="box">					
-				Check out the <a href="reference/faq/">FAQ</a> for some quick answers about Shadow.
-			</div>
-			
+</div>
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">		
+					
+		<div class="tag">News</div><br/>
+		<div class="box">					
+			Shadow 0.7.5 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.7.5-beta">GitHub</a> or head over the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.7.5 adds garbage collection, faster compile times, fewer bugs, and better Mac support!					
 		</div>
+	
+		<br/>
+	
+		<div class="tag">FAQ</div>
+		<div class="box">					
+			Check out the <a href="reference/faq/">FAQ</a> for some quick answers about Shadow.
+		</div>
+		
 	</div>
 </div>
 <?php	

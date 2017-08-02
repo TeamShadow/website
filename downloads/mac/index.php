@@ -82,15 +82,15 @@ source ~/.bash_profile
 			
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">
-			<ul>
-				<li><a href="#prerequisites">Prerequisites</a></li>						
-				<li><a href="#installation">Installation</a></li>
-				<li><a href="#older">Older Versions</a></li>						
-			</ul>
-		</div>
+</div>
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">
+		<ul>
+			<li><a href="#prerequisites">Prerequisites</a></li>						
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#older">Older Versions</a></li>						
+		</ul>
 	</div>
 </div>
 <?php

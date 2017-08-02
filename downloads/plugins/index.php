@@ -86,16 +86,16 @@
 			
 		</div>
 	</div>
-	<?php include $path . 'footer.inc'; ?>
-	<div id="sidebar">
-		<div id="spacer">
-			<ul>						
-				<li><a href="#eclipse">Eclipse Plug-in</a></li>
-				<li><a href="#emacs">Emacs Syntax Highlighter</a></li>
-				<li><a href="#notepad">Notepad++ Syntax Highlighter</a></li>												
-				<li><a href="#vim">Vim Syntax Highlighter</a></li>						
-			</ul>
-		</div>
+</div>
+<?php include $path . 'footer.inc'; ?>
+<div id="sidebar">
+	<div id="spacer">
+		<ul>						
+			<li><a href="#eclipse">Eclipse Plug-in</a></li>
+			<li><a href="#emacs">Emacs Syntax Highlighter</a></li>
+			<li><a href="#notepad">Notepad++ Syntax Highlighter</a></li>												
+			<li><a href="#vim">Vim Syntax Highlighter</a></li>						
+		</ul>
 	</div>
 </div>
 <?php
