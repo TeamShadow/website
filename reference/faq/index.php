@@ -179,7 +179,7 @@
 </div>
 
 <div id="sidebar">
-	<div id="spacer">
+	<div class="spacer">
 		<ul>
 			<li><a href="#name">Where does the name Shadow come from?</a></li>
 			<li><a href="#who">Who is developing the Shadow language?</a></li>

@@ -42,7 +42,7 @@
 </div>
 
 <div id="sidebar">
-	<div id="spacer">
+	<div class="spacer">
 		<ul>
 			<li><a href="linux/">Linux Installation</a></li>
 			<li><a href="mac/">Mac Installation</a></li>

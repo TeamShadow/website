@@ -72,7 +72,7 @@
 </div>
 
 <div id="sidebar">
-	<div id="spacer">		
+	<div class="spacer">		
 					
 		<div class="tag">News</div><br/>
 		<div class="box">					

@@ -88,7 +88,7 @@ source ~/.bashrc
 </div>
 
 <div id="sidebar">
-	<div id="spacer">	
+	<div class="spacer">	
 		<ul>
 			<li><a href="#prerequisites">Prerequisites</a></li>						
 			<li><a href="#installation">Installation</a></li>

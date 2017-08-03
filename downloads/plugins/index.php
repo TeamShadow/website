@@ -90,7 +90,7 @@
 </div>
 
 <div id="sidebar">
-	<div id="spacer">
+	<div class="spacer">
 		<ul>						
 			<li><a href="#eclipse">Eclipse Plug-in</a></li>
 			<li><a href="#emacs">Emacs Syntax Highlighter</a></li>

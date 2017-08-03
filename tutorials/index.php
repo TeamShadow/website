@@ -26,7 +26,7 @@
 </div>
 
 <div id="sidebar">
-	<div id="spacer">
+	<div class="spacer">
 	</div>
 </div>
 <?php

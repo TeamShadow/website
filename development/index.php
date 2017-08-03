@@ -75,7 +75,7 @@
 </div>
 
 <div id="sidebar">
-	<div id="spacer">
+	<div class="spacer">
 		<ul>
 			<li><a href="#compiler">Shadow Compiler</a></li>
 			<li><a href="#plugin">Shadow Eclipse Plug-in</a></li>					

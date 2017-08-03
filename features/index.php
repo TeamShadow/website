@@ -610,7 +610,7 @@ String notNull = whoKnows ?? "random junk";
 </div>
 
 <div id="sidebar">
-	<div id="spacer">
+	<div class="spacer">
 		<ul>
 			<li><a href="#sequences">Sequences</a></li>
 			<li><a href="#multiple">Returning multiple values</a></li>

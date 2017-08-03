@@ -107,7 +107,7 @@ usage: shadowc &lt;mainSource.shadow&gt; [-o &lt;output&gt;] [-c &lt;config.xml&
 </div>	
 
 <div id="sidebar">
-	<div id="spacer">
+	<div class="spacer">
 	</div>
 </div>	
 <?php 
