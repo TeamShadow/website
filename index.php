@@ -74,7 +74,7 @@
 <div id="sidebar">
 	<div class="spacer">		
 					
-		<div class="tag">News</div><br/>
+		<div class="tag">News</div>
 		<div class="box">					
 			Shadow 0.7.5 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.7.5-beta">GitHub</a> or head over the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.7.5 adds garbage collection, faster compile times, fewer bugs, and better Mac support!					
 		</div>
