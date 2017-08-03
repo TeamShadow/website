@@ -37,38 +37,18 @@ pre.terminal { background-color: black; color: white; border: solid 0.1em white;
 
 ul {list-style-type: square; }
 
-/*
-ul
-{
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-}
-ul li
-{
-background-image: url('images/star-black.png');
-background-repeat: no-repeat;
-background-position: 2px 4px; 
-padding-left: 22px; 
-}
-
-div.box ul li
-{
-background-image: url('images/star-white.png');
-background-repeat: no-repeat;
-background-position: 2px 3px; 
-padding-left: 22px; 
-}
-*/
-
-/* old background-color: rgb(120,40,98); */
-
 h1 a:hover{ text-decoration: none; }
 h2 a:hover{ text-decoration: none; }
 h3 a:hover{ text-decoration: none; }
 h4 a:hover{ text-decoration: none; }
 
-.pink { color: rgb( 246, 37, 130 ); }
-.lightpink { color: #fa85b9; }
-
 img.center { display: block; margin-left: auto; margin-right: auto; }
+
+/* special settings for mobile devices */
+@media only screen and (max-device-width: 480px) 
+{
+	#sidebar { display: none;  }
+	#content > div.spacer {  padding-left: 1em ;}		
+}
+
+
