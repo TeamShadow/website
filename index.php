@@ -30,7 +30,7 @@
 			<h3>Why can't a language be fast and safe?</h3>
 			
 			<p>
-			It can!  Sure, you have to pay for checks on array bounds and null pointers, but some trade-offs are worth making.
+			It can!  Sure, you have to pay for checks on array bounds and a few other things, but some trade-offs are worth making.
 			</p>
 			
 			<p>
@@ -76,7 +76,7 @@
 					
 		<div class="tag">News</div>
 		<div class="box">					
-			Shadow 0.7.5 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.7.5-beta">GitHub</a> or head over the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.7.5 adds garbage collection, faster compile times, fewer bugs, and better Mac support!					
+			Shadow 0.7.5 has been released! Read the details on <a href="https://github.com/TeamShadow/shadow/releases/tag/v0.7.5-beta">GitHub</a> or head over to the <a href="downloads/">Downloads</a> page to try it out.  Shadow 0.7.5 adds garbage collection, faster compile times, fewer bugs, and better Mac support!					
 		</div>
 	
 		<br/>

@@ -33,7 +33,7 @@
 			
 			<ol>
 				<li><a href="http://java.com/download">Java 7 or higher</a></li>
-				<li><a href="https://sourceforge.net/projects/mingw-w64/files/latest/download?source=files"</a>MinGW</a></li>
+				<li><a href="https://sourceforge.net/projects/mingw-w64/files/latest/download?source=files"</a>MinGW</a><br/><strong>Note:</strong> If using this installer to install MinGW, please select i686 as the architecture when installing.  If installing any other distribution of MinGW, be certain to pick a 32-bit version. LLVM has compatibility problems in 64-bit on Windows.</li>
 			</ol>
 			
 			<h3><a name="installation">Installation</a></h3>
