@@ -17,4 +17,4 @@ Here's a taste:
 - Garbage collection through reference counting
 - Built-in UTF-8 support
 
-Want to know more?  Head over to the Features page.  If you have more general questions, check out the FAQ.
+Want to know more?  Head over to the [Features]({% link features.md %}) page.  If you have more general questions, check out the FAQ.

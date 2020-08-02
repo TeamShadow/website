@@ -11,7 +11,7 @@
       {%- assign _pages = _pages | sort: 'order' -%}
       {%- for _page in _pages -%}
         {%- assign _title = _page.title | default: _page.layout -%}
-        {%- assign _slug = _title | slugify -%}
+        {%- assign _slug = _title | strip_html | slugify -%}
         {%- assign _icon = _page.icon | default: 'fa-link' -%}
         {%- if _page.icon-style == 'regular' -%}
           {%- assign _class = 'icon-r' -%}
@@ -21,9 +21,9 @@
           {%- assign _class = 'icon' -%}
         {%- endif -%}
         {%- comment -%}<!-- page.url (no underscore) is the url of the current page-->{%- endcomment -%}
-        {%- if _page.order == 3 -%}
+        {%- if _page.order == 5 -%}
           <li><a href="tutorials" id="tutorials-link">
-            <span class="icon fa-link">Tutorials</span>
+            <span class="icon fa-graduation-cap">Tutorials</span>
           </a></li>
         {%- endif -%}
         {%- if _page.url == page.url -%}
@@ -44,7 +44,7 @@
     {%- unless _sections == null -%}
       {%- for _sect in _sections -%}
         {%- assign _title = _sect.title | default: _sect.layout | default: 'Untitled' -%}
-        {%- assign _slug = _title | slugify -%}
+        {%- assign _slug = _title | strip_html | slugify -%}
         {%- assign _icon = _sect.icon | default: 'fa-none' -%}
         {%- if _sect.icon-style == 'regular' -%}
           {%- assign _class = 'icon-r' -%}
@@ -53,7 +53,7 @@
         {%- else -%}
           {%- assign _class = 'icon' -%}
         {%- endif -%}
-        <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
+        <li><a href="#{{- _slug -}}" id="{{- _slug -}}-link" class="scrolly subheading"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
       {%- endfor -%}
     {%- endunless -%}
   </ul>
