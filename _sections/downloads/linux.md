@@ -10,7 +10,7 @@ Ubuntu 18.04 and higher is supported, but other distributions and releases of Li
 
 Click the button below for the 0.8 Linux distribution of the compiler.
 <aside>
-<form method="get" action="https://github.com/TeamShadow/shadow/releases/download/v0.8-beta/shadow-0.8-linux.tar.gz">
+<form method="get" action="https://github.com/TeamShadow/shadow/releases/download/v0.8-beta/shadow-0.8-linux.tar.xz">
 	<button type="submit">Download Shadow for Linux</button>
 </form>
 <br/>
