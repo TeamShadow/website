@@ -67,7 +67,7 @@
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #444;
+		color: #000;
 
 		&.is-loading * {
 			@include vendor('transition', 'none !important');
@@ -80,7 +80,7 @@
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #444;
+		color: #000;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -108,7 +108,7 @@
 	}
 
 	header {
-		margin: 0 0 2em 0;
+		margin: 0 0 1.5em 0;
 
 		> p {
 			margin: 1em 0 0 0;
@@ -130,8 +130,8 @@
 
 	a {
 		text-decoration: none;
-		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		color: #096cc3;
+		border-bottom: dotted 1px rgba(9, 108, 195, 0.5);
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
 
@@ -159,18 +159,23 @@
 	}
 
 	code {
+	/*
 		background: rgba(0, 0, 0, 0.05);
 		border-color: rgba(0, 0, 0, 0.2);
 		border-radius: 4px;
-		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		padding: 0.25em 0.325em;
+	*/
+		font-family: "Courier New", monospace;
+		background-color: rgba(0, 0, 0, 0.04);
+		border-radius: 4px;
 	}
 
 	pre {
+		border: 1px solid #e1e4e5;
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
+		font-size: 12pt;
 		tab-size: 4;
 		margin: 0 0 2em 0;
 		code {
@@ -178,6 +183,7 @@
 			line-height: 1.5;
 			padding: 0.75em 1em;
 			overflow-x: auto;
+			background-color: transparent;
 		}
 	}
 
@@ -189,7 +195,7 @@
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 
 	dl {
@@ -404,6 +410,7 @@
 	table {
 		width: 100%;
 		text-align: left;
+		border: 1px solid #e1e4e5;
 
 		tbody {
 			tr {
@@ -416,19 +423,23 @@
 		td {
 			padding: 0.5em 1em 0.5em 1em;
 			text-align: center;
+			border-bottom: 1px solid #e1e4e5;
+			border-left: 1px solid #e1e4e5;
 		}
 
 		th {
-			font-weight: 300;
+			font-weight: bold;
 			text-align: center;
 			padding: 0.5em 1em 0.5em 1em;
 			color: #fff;
-			background: #02182b;
+			background: #a8d0e6;
+			border-bottom: 1px solid #e1e4e5;
+			border-left: 1px solid #e1e4e5;
 		}
 
 		thead {
-			background: #02182b;
-			color: #fff;
+			background: #a8d0e6;
+			color: #000;
 		}
 
 		tfoot {
@@ -607,7 +618,7 @@
 					
 					&.subheading {
 						padding: 0.3em 2em 0.3em 1em;
-						font-size: 0.75em;
+						font-size: 0.8em;
 					}					
 
 					span {
@@ -647,7 +658,7 @@
 		margin-left: 375px;
 		text-align: center;
 		background-color: #dce3e2;
-		padding: 3em 0 4em 0;
+		padding: 2em 0 3em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
 
@@ -689,7 +700,7 @@
 		> section, article {
 			margin: 0;
 			overflow: hidden;
-			padding: 4em 0;
+			padding: 2em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 
 			&.dark {
@@ -716,7 +727,7 @@
 			}
 
 			&.cover {
-				padding: 6em 0;
+				padding: 4em 0;
 				position: relative;
 				z-index: 0;
 				img.back {
@@ -755,7 +766,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 16pt;
 			}
 
 		/* Header */
@@ -786,12 +797,12 @@
 
 			#main {
 				> section, article {
-					padding: 2em 0;
+					padding: 1.5em 0;
 				}
 
 				section {
 					&.cover {
-						padding: 5em 0;
+						padding: 3em 0;
 					}
 				}
 			}
@@ -817,7 +828,7 @@
 			}
 
 			.container {
-				padding: 0 2em 0 2em;
+				padding: 0 1.5em 0 1.5em;
 			}
 
 		/* List */
@@ -1081,12 +1092,12 @@
 				margin-left: 0;
 
 				> section, article {
-					padding: 3em 0;
+					padding: 2em 0;
 				}
 
 				section {
 					&.cover {
-						padding: 4em 0;
+						padding: 3em 0;
 					}
 				}
 			}
@@ -1127,12 +1138,12 @@
 
 			#main {
 				> section, article {
-					padding: 2em 0;
+					padding: 1.5em 0;
 				}
 
 				section {
 					&.cover {
-						padding: 4em 0em;
+						padding: 3em 0em;
 
 						header {
 							padding: 0 1em;

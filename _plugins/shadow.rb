@@ -68,10 +68,10 @@ module Rouge
 		oct_digit = /[0-7]+/
 		hex_digit = /[0-9a-f]+/i
 		rule %r/#{digit}+\.#{digit}+([eE]#{digit}+)?[fFdD]?/, Num::Float
-		rule %r/0b#{bin_digit}+L?u?/i, Num::Bin
-		rule %r/0x#{hex_digit}+L?u?/i, Num::Hex
-		rule %r/0c#{oct_digit}+L?u?/i, Num::Oct
-		rule %r/#{digit}+L?u?/i, Num::Integer
+		rule %r/0b#{bin_digit}+u?[ysiL]?/i, Num::Bin
+		rule %r/0x#{hex_digit}+u?[ysiL]?/i, Num::Hex
+		rule %r/0c#{oct_digit}+u?[ysiL]?/i, Num::Oct
+		rule %r/#{digit}+u?[ysiL]?/i, Num::Integer
 		rule %r/\n/, Text
 	  end
 

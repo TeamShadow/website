@@ -46,6 +46,8 @@ Many languages assume that integer-like types are of primitive type `int`.  In S
 	<td>9223372036854775807</td>
 	<td><code>0L</code></td>
 </tr>		
+</table>
+<table>
 <tr>
 	<th colspan="5">Unsigned Types</th>
 </tr>
@@ -65,7 +67,7 @@ Many languages assume that integer-like types are of primitive type `int`.  In S
 	<td><code>ushort</code></td>
 	<td>2</td>
 	<td colspan="2">65535</td>
-	<td><code>1000<b>us</b></code></td>
+	<td><code>1000us</code></td>
 </tr>
 <tr>
 	<td><code>uint</code></td>

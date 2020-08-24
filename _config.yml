@@ -20,11 +20,9 @@
 
 title: Shadow Programming Language
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Shadow is a type-safe, general purpose, systems language intended to be compiled to machine code.
   
-baseurl: 'new'  
+baseurl: ''  
 url: 'http://shadow-language.org' # the base hostname & protocol for your site, e.g. http://example.com
 author: "Team Shadow"
 avatar: "assets/images/star.svg"
