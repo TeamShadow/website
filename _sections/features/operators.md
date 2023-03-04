@@ -63,7 +63,7 @@ band.add("Ringo");
 String drummer = band[3];
 {% endhighlight %}
 
-There's also a `CanIndexStore<V,K>` interface that allows the index operator (`[]`) to be overloaded so that it can  store values into an index. Both interfaces can be implemented independently of each other, allowed classes that can load from an index, classes that can store to an index, and classes that can do both. Consider the following code that stores values into a `HashMap` using array-like indexing.
+There's also a `CanIndexStore<V,K>` interface that allows the index operator (`[]`) to be overloaded so that it can  store values into an index. Both interfaces can be implemented independently of each other, allowing classes that can load from an index, classes that can store to an index, and classes that can do both. Consider the following code that stores values into a `HashMap` using array-like indexing.
 
 {% highlight shadow %}
 var clan = HashMap<String, String>:create();
