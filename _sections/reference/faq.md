@@ -26,7 +26,7 @@ Since release 0.7.5, Shadow has done garbage collection through reference counti
 ### Does Shadow support parallel computation?  How does that work?
 
 Parallel computation is central to the design of Shadow.  From the very beginning, our plan has been to make spawning threads easy for the user.  However, none of the parallel language features have been implemented in the compiler yet. (They should be coming in the next release!)		
-Our plan is to use a message-passing rather than a shared-memory paradigm.  To make this system efficient, we have compiler-enforced immutable classes and references.  Immutable objects can be shared freely among threads with no concerns about data races.
+Our plan is to use a message-passing paradigm rather than a shared-memory paradigm.  To make this system efficient, we have compiler-enforced immutable classes and references.  Immutable objects can be shared freely among threads with no concerns about data races.
 	
 ### Why does it take so long to compile a Shadow program?
 				
